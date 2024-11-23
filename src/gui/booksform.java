@@ -1,8 +1,8 @@
-package src;
+package src.gui;
 
 import javax.swing.*;
 
-public class userform {
+public class booksform {
     private JButton findbutton;
     private JButton addbutton;
     private JButton removebutton;
