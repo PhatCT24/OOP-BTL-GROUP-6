@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="src.gui.MenuForm">
-  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="10" left="30" bottom="50" right="30"/>
     <constraints>
-      <xy x="17" y="51" width="467" height="309"/>
+      <xy x="17" y="51" width="682" height="309"/>
     </constraints>
     <properties>
       <enabled value="true"/>
     </properties>
     <border type="none"/>
     <children>
-      <component id="bdca2" class="javax.swing.JLabel" binding="books">
+      <component id="bdca2" class="javax.swing.JLabel" binding="Books">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="books"/>
+          <text value="Books"/>
         </properties>
       </component>
       <component id="d8d22" class="javax.swing.JLabel" binding="user">
@@ -26,17 +26,9 @@
           <text value="User"/>
         </properties>
       </component>
-      <component id="1db80" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Menu"/>
-        </properties>
-      </component>
       <component id="110a1" class="javax.swing.JButton" binding="userbutton">
         <constraints>
-          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false">
             <maximum-size width="70" height="70"/>
           </grid>
         </constraints>
@@ -51,13 +43,40 @@
       </component>
       <component id="2f964" class="javax.swing.JButton" binding="booksbutton">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false">
             <maximum-size width="70" height="70"/>
           </grid>
         </constraints>
         <properties>
           <icon value="src/resources/book-icon.png"/>
           <text value=""/>
+        </properties>
+      </component>
+      <component id="f4433" class="javax.swing.JButton" binding="button1" default-binding="true">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="70" height="70"/>
+          </grid>
+        </constraints>
+        <properties>
+          <icon value="src/resources/borrow.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="8d9f0" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Borrow"/>
+        </properties>
+      </component>
+      <component id="1db80" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Menu"/>
         </properties>
       </component>
     </children>

@@ -5,10 +5,11 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class MenuForm {
-    private JLabel userbutton;
-    private JLabel books;
+    private JButton userbutton;
+    private JLabel Books;
     private JLabel user;
     private JButton booksbutton;
+    private JButton button1;
 
     public MenuForm() {
         userbutton.addMouseListener(new MouseAdapter() {
