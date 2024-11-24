@@ -81,7 +81,7 @@
           </grid>
         </constraints>
         <properties>
-          <icon value="src/resources/settings.png"/>
+          <icon value="src/resources/settings (1).png"/>
           <text value=""/>
         </properties>
       </component>
