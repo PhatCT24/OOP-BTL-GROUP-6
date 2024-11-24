@@ -1,23 +1,22 @@
 package src.gui;
 
 import javax.swing.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
-public class MenuForm {
+public class MenuForm extends JFrame{
     private JButton userbutton;
     private JLabel Books;
     private JLabel user;
     private JButton booksbutton;
+    private JButton borrowbutton;
+    private JPanel menuForm;
     private JButton button1;
 
-    public MenuForm() {
-        userbutton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-            }
-        });
+    public JPanel getMenuForm(){
+        return menuForm;
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
     }
 }
 
