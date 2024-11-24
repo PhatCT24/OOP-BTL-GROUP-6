@@ -1,6 +1,6 @@
 package src.gui;
 
-import src.account.Account;
+import src.code_and_db.Account;
 
 import javax.swing.*;
 import java.awt.*;

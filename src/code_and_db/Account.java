@@ -1,4 +1,4 @@
-package src.account;
+package src.code_and_db;
 
 import java.io.File;
 import java.util.Scanner;
@@ -14,7 +14,7 @@ public class Account {
     // Check if correct login username and password
     public static boolean checklogin(String username, String password)
     throws Exception{
-        Scanner sc = new Scanner(new File("src/account/Account.txt"));
+        Scanner sc = new Scanner(new File("src/code_and_db/Account.txt"));
         while (sc.hasNextLine()){
             if (sc.next().equals(username) && sc.next().equals(password)){
                 return true;
