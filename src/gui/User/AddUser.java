@@ -9,4 +9,9 @@ public class AddUser {
     private JTextField Name;
     private JTextField Address;
     private JTextField Birthdate;
+    private JPanel AddUser;
+
+    public JPanel getAddUser(){
+        return AddUser;
+    }
 }
