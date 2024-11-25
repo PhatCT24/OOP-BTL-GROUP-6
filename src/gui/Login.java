@@ -4,9 +4,11 @@ import src.code_and_db.Account;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
+interface showNewWindow{
+
+}
 public class Login extends JFrame {
     private JTextField username;
     private JPasswordField password;
@@ -38,6 +40,35 @@ public class Login extends JFrame {
                     }
                 } catch (Exception ex) {
                     ex.printStackTrace();
+                }
+            }
+        });
+
+
+        loginbutton.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if(e.getKeyCode() == KeyEvent.VK_ENTER){
+                    loginbutton.doClick();
+                    try {
+                        if (Account.checklogin(username.getText(), password.getText())) {
+                            // Open the menu window
+                            JFrame menuForm = showNewWindow("Menu", 500, 300);
+                            menuForm.setContentPane(new MenuForm().getMenuForm());
+                            menuForm.setVisible(true);
+                            menuForm.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                            menuForm.setResizable(false);
+                            menuForm.setLocationRelativeTo(null);
+                            menuForm.pack();
+
+                            // Close the login window
+                            loginFrame.dispose();
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Incorrect username or password!","Login Failed", JOptionPane.ERROR_MESSAGE);
+                        }
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
                 }
             }
         });

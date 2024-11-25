@@ -1,6 +1,8 @@
 package src.gui;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class MenuForm extends JFrame{
     private JButton userbutton;
@@ -11,12 +13,25 @@ public class MenuForm extends JFrame{
     private JPanel menuForm;
     private JButton button1;
 
-    public JPanel getMenuForm(){
-        return menuForm;
+    public MenuForm() {
+        booksbutton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            }
+        });
     }
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
+    public MenuForm(JFrame BookForm){
+        booksbutton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+    }
+
+    public JPanel getMenuForm(){
+        return menuForm;
     }
 }
 
