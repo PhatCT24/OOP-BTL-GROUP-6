@@ -11,4 +11,9 @@ public class Addbooks {
     private JButton cancelButton;
     private JTextField volume;
     private JTextField ID;
+    private JPanel AddBooks;
+
+    public JPanel getAddBooks(){
+        return AddBooks;
+    }
 }

@@ -16,6 +16,7 @@ public class Login extends JFrame implements showNewWindow {
 
     public Login(JFrame loginFrame) {
         this.loginFrame = loginFrame;
+        loginFrame.setResizable(false);
 
         loginbutton.addActionListener(new ActionListener() {
             @Override
