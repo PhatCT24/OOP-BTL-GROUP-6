@@ -7,4 +7,9 @@ public class Userform {
     private JButton addbutton;
     private JButton removebutton;
     private JButton updatebutton;
+    private JPanel UserForm;
+
+    public JPanel getUserForm() {
+        return UserForm;
+    }
 }
