@@ -1,22 +1,12 @@
-package src.gui;
+package src.Login;
 
 import src.code_and_db.Account;
+import src.gui.MenuForm;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-interface showNewWindow{
-    public static JFrame showNewWindow(String title, int x, int y){
-        JFrame frame = new JFrame(title);
-        frame.setSize(500, 300);
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.setLayout(new BorderLayout());
-        frame.setLocation(x, y);
-        return frame;
-    }
-    
-}
 public class Login extends JFrame implements showNewWindow {
     private JTextField username;
     private JPasswordField password;

@@ -1,5 +1,6 @@
 package src.gui;
 
+import src.Login.showNewWindow;
 import src.gui.Books.Booksform;
 import src.gui.User.Userform;
 
@@ -7,7 +8,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MenuForm extends JFrame implements showNewWindow{
+public class MenuForm extends JFrame implements showNewWindow {
     private JButton userbutton;
     private JLabel Books;
     private JLabel user;
