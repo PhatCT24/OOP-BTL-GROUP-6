@@ -4,7 +4,6 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
 public class Removebooks {
-    private JTextField textField1;
     private JTextField textField2;
     private JButton removeButton;
     private JTable table1;
