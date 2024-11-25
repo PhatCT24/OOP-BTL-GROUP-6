@@ -23,7 +23,7 @@ public class MenuForm extends JFrame implements showNewWindow{
         booksbutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame BookForm = Login.showNewWindow("Book Form", 500, 300);
+                JFrame BookForm = showNewWindow.showNewWindow("Book Form", 500, 300);
                 BookForm.setContentPane(new Booksform().getBookForm());
                 BookForm.setVisible(true);
                 BookForm.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -35,7 +35,7 @@ public class MenuForm extends JFrame implements showNewWindow{
         userbutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame UserForm = Login.showNewWindow("User Form", 500, 300);
+                JFrame UserForm = showNewWindow.showNewWindow("User Form", 500, 300);
                 UserForm.setContentPane(new Userform().getUserForm());
                 UserForm.setVisible(true);
                 UserForm.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

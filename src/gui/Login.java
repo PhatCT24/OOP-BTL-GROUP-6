@@ -53,15 +53,20 @@ public class Login extends JFrame implements showNewWindow {
         });
 
 
-        loginbutton.addKeyListener(new KeyAdapter() {
+        KeyAdapter enterKeyListener = new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
-
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    loginbutton.doClick();
+                }
             }
-        });
+        };
+
+        username.addKeyListener(enterKeyListener);
+        password.addKeyListener(enterKeyListener);
     }
 
-    public static JFrame showNewWindow(String title, int x, int y) {
+    public JFrame showNewWindow(String title, int x, int y) {
         JFrame frame = new JFrame(title);
         frame.setSize(500, 300);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
